@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import React from "react";
 
 function Header({ text, bgColor, textColor }) {
   const headerStyle = {
@@ -16,15 +17,15 @@ function Header({ text, bgColor, textColor }) {
 }
 
 Header.defaultProps = {
-  text: 'Feedback UI',
-  bgColor: 'rgba(0,0,0,0.4)',
-  textColor: '#ff6a95'
+  text: "Feedback UI",
+  bgColor: "rgba(0,0,0,0.4)",
+  textColor: "#ff6a95",
 };
 
 Header.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   bgColor: PropTypes.string,
-  textColor: PropTypes.string
+  textColor: PropTypes.string,
 };
 
 export default Header;
