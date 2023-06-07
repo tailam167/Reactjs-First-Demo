@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Navigate, useNavigate, Route, Routes } from "react-router-dom";
+import { Navigate, useNavigate, Route, Routes } from "react-router-dom";
 
 function Post() {
   // const params = useParams();
